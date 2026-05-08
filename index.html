@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="/images/nanonana-superbot.png" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <title>НаноБабана — нейросеть для создания и редактирования изображений</title>
+    <meta name="description" content="НаноБабана — ИИ-сервис генерации и редактирования изображений по описанию. Готовые промпты, реалистичные результаты, три модели Nano Banana. Перейдите в галерею и попробуйте бесплатно." />
+    <meta name="keywords" content="нанобабана, nanobabana, нано банана, nano banana, нейросеть для картинок, генерация изображений ИИ, промпты для нейросети, AI редактирование фото" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="НаноБабана — ИИ генерация изображений" />
+    <meta property="og:description" content="ИИ-сервис генерации изображений: галерея промптов, быстрые модели Nano Banana, реалистичный результат." />
+    <meta property="og:image" content="https://nanobabana.ru/images/og-preview.jpg" />
+    <meta property="og:url" content="https://nanobabana.ru" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="НаноБабана" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="НаноБабана — ИИ генерация изображений" />
+    <meta name="twitter:description" content="ИИ-сервис генерации изображений: галерея промптов, быстрые модели Nano Banana, реалистичный результат." />
+    <!-- Canonical -->
+    <link rel="canonical" href="https://nanobabana.ru" />
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "НаноБабана",
+      "alternateName": "Nano Banana",
+      "url": "https://nanobabana.ru",
+      "description": "ИИ-сервис генерации и редактирования изображений по описанию. Перейдите в галерею промптов на основном проекте.",
+      "sameAs": ["https://nanobanana.ru"],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://nanobanana.ru/gallery?search={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Что такое Nano Banana?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nano Banana — нейросеть для генерации и редактирования изображений по текстовому описанию. Создаёт фотореалистичные портреты, аниме, иллюстрации, карточки товаров и редактирует фото с сохранением черт лица."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли пользоваться без VPN?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Сервис работает в обычном браузере на территории России без VPN — никаких блокировок и сторонних плагинов."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько это стоит?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Старт бесплатный — можно попробовать генерации без оплаты. Дальше доступны пакеты с разным количеством запросов; точные тарифы — в личном кабинете на nanobanana.ru."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем Nano Banana отличается от Midjourney и DALL·E?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Главное отличие — точное следование промпту и сохранение лица персонажа при редактировании фото. Подходит для рабочих задач: карточки маркетплейсов, фотосессии из селфи, серии иллюстраций в одном стиле."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие форматы и разрешения поддерживаются?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "На вход — JPG, PNG, WebP. На выход — изображения в высоком разрешении до 4K, в зависимости от выбранной модели и параметров генерации."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сохраняются ли мои изображения?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Все ваши генерации хранятся в личном кабинете — можно вернуться, скачать или повторить. Загруженные исходники используются только для обработки запроса."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужна ли регистрация?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Чтобы посмотреть галерею промптов — нет. Для генерации нужен аккаунт: вход через Telegram или email с подтверждением кода."
+          }
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- Yandex.Metrika: после load + idle, чтобы не конкурировать с LCP -->
+    <script type="text/javascript">
+      (function () {
+        function loadMetrika() {
+          if (window.__ymLoaded) return;
+          window.__ymLoaded = true;
+          (function (m, e, t, r, i, k, a) {
+            m[i] =
+              m[i] ||
+              function () {
+                (m[i].a = m[i].a || []).push(arguments);
+              };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) {
+              if (document.scripts[j].src === r) {
+                return;
+              }
+            }
+            (k = e.createElement(t)),
+              (a = e.getElementsByTagName(t)[0]),
+              (k.async = 1),
+              (k.src = r),
+              a.parentNode.insertBefore(k, a);
+          })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=109121229', 'ym');
+
+          ym(109121229, 'init', {
+            ssr: true,
+            webvisor: true,
+            clickmap: true,
+            ecommerce: 'dataLayer',
+            referrer: document.referrer,
+            url: location.href,
+            accurateTrackBounce: true,
+            trackLinks: true,
+          });
+        }
+        function schedule() {
+          var ric = window.requestIdleCallback;
+          if (typeof ric === 'function') {
+            ric(
+              function () {
+                loadMetrika();
+              },
+              { timeout: 4000 }
+            );
+          } else {
+            window.setTimeout(loadMetrika, 2000);
+          }
+        }
+        if (document.readyState === 'complete') {
+          schedule();
+        } else {
+          window.addEventListener('load', schedule, { once: true });
+        }
+      })();
+    </script>
+    <noscript>
+      <div>
+        <img
+          src="https://mc.yandex.ru/watch/109121229"
+          style="position: absolute; left: -9999px"
+          alt=""
+        />
+      </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+  </body>
+</html>

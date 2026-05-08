@@ -1,0 +1,341 @@
+.page {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px 32px;
+}
+
+/* ── Hero ── */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 48px 0 56px;
+  text-align: center;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 560px;
+}
+
+.heroTitle {
+  font-size: clamp(22px, 4.5vw, 36px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.heroTitleGold {
+  background: linear-gradient(120deg, #fff2b2 0%, #ffd24d 45%, #ff9f45 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.heroSubtitle {
+  font-size: clamp(18px, 4vw, 24px);
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.3;
+  margin: 0;
+}
+
+.heroDesc {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 560px;
+}
+
+.heroCtas {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.ctaGold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 24px;
+  border-radius: 999px;
+  background: linear-gradient(120deg, #f2a231 0%, #fbda49 55%, #fff3c4 100%);
+  color: #0b0f1b;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  border: 1px solid rgba(245, 196, 0, 0.6);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55), 0 8px 24px rgba(245, 196, 0, 0.28);
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.ctaGold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(245, 196, 0, 0.38), inset 0 1px 0 rgba(255, 255, 255, 0.65);
+}
+
+.ctaSecondary {
+  display: inline-flex;
+  align-items: center;
+  padding: 13px 24px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.ctaSecondary:hover {
+  background: rgba(255, 255, 255, 0.10);
+  transform: translateY(-2px);
+}
+
+/* ── Section ── */
+.section {
+  padding: 48px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.sectionHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  gap: 16px;
+}
+
+.sectionTitle {
+  font-size: clamp(22px, 4vw, 30px);
+  font-weight: 800;
+  color: var(--text);
+  margin: 0 0 28px;
+  letter-spacing: -0.01em;
+}
+
+.sectionHead .sectionTitle {
+  margin-bottom: 0;
+}
+
+.seeAllWrap {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.seeAll {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+  white-space: nowrap;
+  opacity: 0.85;
+  transition: opacity 0.15s;
+}
+
+.seeAll:hover {
+  opacity: 1;
+}
+
+/* ── Features ── */
+.features {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.feature {
+  position: relative;
+  background:
+    radial-gradient(80% 60% at 0% 0%, rgba(100, 140, 255, 0.07) 0%, transparent 55%),
+    linear-gradient(160deg, rgba(19, 27, 51, 0.9) 0%, rgba(11, 17, 36, 0.9) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 20px;
+  padding: 28px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.featureIcon {
+  color: var(--accent);
+  display: inline-flex;
+}
+
+.featureTitle {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--text);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.featureDesc {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* ── Gallery preview ── */
+.previewGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+/* ── FAQ ── */
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faqItem {
+  background:
+    radial-gradient(80% 60% at 100% 0%, rgba(160, 80, 255, 0.06) 0%, transparent 55%),
+    linear-gradient(160deg, rgba(19, 27, 51, 0.9) 0%, rgba(11, 17, 36, 0.9) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.faqItem:hover {
+  border-color: rgba(245, 196, 0, 0.25);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.28);
+}
+
+.faqItem[open] {
+  border-color: rgba(245, 196, 0, 0.3);
+}
+
+.faqQuestion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 22px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.01em;
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+}
+
+.faqQuestion::-webkit-details-marker {
+  display: none;
+}
+
+.faqQuestion:focus-visible {
+  box-shadow: inset 0 0 0 2px rgba(245, 196, 0, 0.6);
+  border-radius: 16px;
+}
+
+.faqChevron {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--accent);
+  line-height: 1;
+  transition: transform 0.25s ease;
+}
+
+.faqItem[open] .faqChevron {
+  transform: rotate(45deg);
+}
+
+.faqAnswer {
+  padding: 0 22px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--muted);
+  line-height: 1.65;
+  white-space: pre-line;
+}
+
+/* ── Footer ── */
+.footer {
+  padding: 32px 0 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  text-align: center;
+}
+
+.footerCopy {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.3);
+  margin: 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .features {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .feature {
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .previewGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero {
+    padding: 32px 0 40px;
+  }
+
+  .faqQuestion {
+    padding: 16px 18px;
+    font-size: 14px;
+  }
+
+  .faqAnswer {
+    padding: 0 18px 16px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .previewGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heroCtas {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ctaGold,
+  .ctaSecondary {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,9 @@
+# https://nanobabana.ru
+User-agent: *
+Allow: /
+
+Sitemap: https://nanobabana.ru/sitemap.xml
+
+# Яндекс: незначащие GET-параметры (метки, клики)
+User-agent: Yandex
+Clean-param: ref&ad&yclid

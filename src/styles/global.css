@@ -1,0 +1,107 @@
+:root {
+ --bg: #090e1c;
+ --panel: #0f162b;
+ --panel-strong: #131b33;
+ --text: #f4f6ff;
+ --muted: #9da7c2;
+ --border: #1f2942;
+ --accent: #f5c400;
+ --accent-strong: #ffda4f;
+ --chip: #1a2238;
+ --overlay: rgba(7, 10, 20, 0.82);
+  --radius-lg: 20px;
+  --radius-md: 14px;
+  --radius-sm: 10px;
+  --shadow-soft: 0 14px 34px rgba(0, 0, 0, 0.25);
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+ background: radial-gradient(140% 90% at 20% 20%, #111a32 0%, #090e1c 60%, #070b16 100%);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+html {
+  background: #090e1c;
+  scrollbar-gutter: stable;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #1f2942 rgba(7, 11, 22, 0.92);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+html.qp-mobile-scroll-lock,
+body.qp-mobile-scroll-lock {
+  overflow: hidden;
+  overflow-y: hidden;
+  scrollbar-gutter: stable;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f2942;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+@media (max-width: 640px) {
+  html,
+  body {
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+
+  * {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  *::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+}
