@@ -181,7 +181,7 @@ export function LandingPage() {
 
       {/* ── Footer ── */}
       <footer className={styles.footer}>
-        <p className={styles.footerCopy}>© 2026 НаноБанана</p>
+        <p className={styles.footerCopy}>© 2026 Nano Banana</p>
       </footer>
     </main>
   );
