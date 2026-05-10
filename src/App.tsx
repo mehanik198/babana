@@ -1,5 +1,6 @@
 import styles from './App.module.css';
 import { LandingPage } from './components/landing/LandingPage';
+import { CookieBanner } from './components/layout/CookieBanner';
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <div className={styles.content}>
         <LandingPage />
       </div>
+      <CookieBanner />
     </div>
   );
 }

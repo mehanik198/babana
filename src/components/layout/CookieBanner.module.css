@@ -1,0 +1,81 @@
+.banner {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  z-index: 100;
+  margin: 0 auto;
+  max-width: 720px;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(15, 22, 43, 0.96);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(245, 196, 0, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.5);
+  color: var(--text);
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text {
+  flex: 1;
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.button {
+  flex-shrink: 0;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: linear-gradient(120deg, #f2a231 0%, #fbda49 55%, #fff3c4 100%);
+  color: #0b0f1b;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  border: 1px solid rgba(245, 196, 0, 0.6);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55), 0 6px 16px rgba(245, 196, 0, 0.28);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(245, 196, 0, 0.38), inset 0 1px 0 rgba(255, 255, 255, 0.65);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 640px) {
+  .banner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    padding: 14px 16px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+  }
+
+  .button {
+    align-self: stretch;
+  }
+}
